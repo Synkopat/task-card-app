@@ -1,3 +1,6 @@
+#Discard npm modules
+node_modules/
+
 #################
 ## Eclipse
 #################
