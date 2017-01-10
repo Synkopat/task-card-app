@@ -3,9 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { TaskCardComponent } from './taskCard/taskCard.component';
+
 @NgModule({
     imports: [ BrowserModule ],
-    declarations: [ AppComponent ],
+    declarations: [ AppComponent,
+                    TaskCardComponent 
+                    ],
     bootstrap: [ AppComponent ]
 })
 
