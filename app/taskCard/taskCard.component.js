@@ -9,14 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var task_1 = require('../model/task');
 var TaskCardComponent = (function () {
     function TaskCardComponent() {
     }
+    TaskCardComponent.prototype.toggleStatus = function () {
+        this.task.isCompleted = !this.task.isCompleted;
+    };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', task_1.Task)
+    ], TaskCardComponent.prototype, "task", void 0);
     TaskCardComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'task-card',
-            templateUrl: 'taskCard.component.html'
+            templateUrl: 'taskCard.component.html',
+            styleUrls: ['taskCard.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], TaskCardComponent);

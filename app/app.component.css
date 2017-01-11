@@ -1,0 +1,24 @@
+.container{
+    padding-top: 3rem;
+    border: double dodgerblue darkslateblue;
+}
+.row{
+    margin-bottom: 1.5rem;
+}
+form {
+    text-align: center;
+}
+.btn {
+    background-color: #5c5D3B;
+    border-color: #5c5D3B
+}
+.btn:hover{
+    background-color: #829366;
+    border-color: #000000
+}
+.form-control:focus{
+    border-color: #5c5D3B       
+}
+i{
+    padding-right: .5rem
+}

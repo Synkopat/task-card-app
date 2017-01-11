@@ -1,10 +1,27 @@
 .card{
     border-radius: 0;
+    cursor: pointer;
 }
 .card,
 .card-footer{
     background-color: #FFFFA5;
 }
+.card.isCompleted,
+.card.isCompleted .card-footer{
+    background-color: #baddb3
+}
 .card-footer{
     text-align: right;
 }
+i{
+    padding-right: .5rem;
+}
+.fa.fa-times{
+    color: #CC0000;
+    padding-right: .5rem;
+};
+
+.fa.fa-check{
+    color: #0b4201;
+    padding-right: .5rem;
+};
